@@ -44,21 +44,26 @@ line-height: 2.8rem;
 /*Styling for the main section*/
 main{
   color: #ffffff;
+  background-image: url(./src/assets/reactIconLarge.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 h1{
+  margin: 0;
   font-size: 4rem;
   font-weight: 700;
-  padding: 2rem 4rem;
+  padding: 4rem 4rem 0rem 2.2rem;
+  letter-spacing: -0.05rem;
 }
 
 ul{
   font-size: 1.6rem;
-  padding-left: 8rem;
+  padding-left: 7rem;
 }
 
 ul>li{
-  padding: 1.3rem 0;
+  padding: 1.1rem 0;
 }
 
 li::marker{
