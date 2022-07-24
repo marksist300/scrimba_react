@@ -1,70 +1,142 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  text-decoration: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+a{
+  text-decoration: none;
+  color: inherit;
 }
-a:hover {
-  color: #535bf2;
+*{
+  box-sizing: border-box;
+  text-align: center;
 }
 
 body {
   margin: 0;
+  background-color: #23252C;
+  color: #FFFFFF;
+}
+/*Photo rules */
+.myPhoto{
+  width:100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.App{
+  width: 32rem;
+  background-color: #1A1B21;
+  margin: 4rem auto;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+/*Info setup*/
+.info > h1{
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.info> h2{
+  color: #F3BF99;
+  font-weight: 400;
+  font-size: 1.28rem;
+  line-height: 1.55rem
+}
+
+.info>h3{
+  font-size: 1.2rem;
+  line-height: 150%;
+  color: #F5F5F5;
+}
+
+/*Buttons set up*/
+
+.buttons-sections{
+  margin: 1.5rem 0 3.3rem 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  padding: 0 3.5rem;
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+button{
+  font-size: 1.4rem;
+  padding: .9rem 1.3rem .9rem 1.1rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: .6rem;
+  width: 15.15rem;
+  border: none;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button > img{
+  position: relative;
+  bottom: -.17rem;
+  padding-right: .4rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.linkedin-btn{
+  color: #FFFFFF;
+  background-color: #5093E2;
+}
+
+.linkedin-btn:hover{
+  background-color: #3579c7;
+  transition: 300ms;
+}
+
+.email-btn>img{
+  position: relative;
+  bottom: -.2rem;
+}
+
+.email-btn{
+  background-color: #D1D5DB;
+}
+
+.email-btn:hover{
+  background-color: #a6aab1;
+  transition: 300ms;
+}
+
+/*About Section */
+
+.About-interests-section{
+  font-size: 1.2rem;
+  line-height: 150%;
+  color: #DCDCDC;
+  padding: 0 3.5rem;
+
+}
+
+.About-interests-section h2, p{
+  text-align: left;
+}
+
+.About-interests-section > h2{
+  color: #F5F5F5;
+}
+
+/*Footer links section*/
+
+footer{
+  background-color: #161619;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.footer-links-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 7rem;
+}
+
+.footer-links-list> li{
+  padding: 0 2rem;
+}
+
+li:hover{
+  margin-top: -.3rem;
+  transition: 300ms;
 }
