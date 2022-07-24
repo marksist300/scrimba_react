@@ -1,28 +1,40 @@
-:root {
-  font-family: 'Inter', Avenir, Helvetica, Arial, sans-serif;
+:root{
   font-size: 62.5%;
 }
 
-nav>img{
-  padding-right: .6rem;
+* {
+  box-sizing: border-box;
+}
+
+body{
+margin: 0;
 }
 
 .nav-bar{
-  display: flex;
-  background-color: #21222A;
-  padding: 2.8rem 2.2rem;
+display: flex;
+background-color: #21222A;
+padding: 2.8rem 2.2rem;
 }
 
+.react-logo{
+position: relative;
+padding-right: .6rem;
+width: 3rem;
+height: 3rem;
+bottom: -1.5rem;
+}
 .nav-title{
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 2.25rem;
-  color: #61DAFB;
+font-family: 'Inter';
+font-weight: 700;
+font-size: 2.25rem;
+color: #61DAFB;
+line-height: 2rem;
 }
 
 .project-num{
-  margin-left: auto;
-  font-weight: 600;
-  font-size: 1.6rem;
-  color: #DEEBF8;
+margin-left: auto;
+font-weight: 600;
+font-size: 1.6rem;
+color: #DEEBF8;
+line-height: 2.8rem;
 }
