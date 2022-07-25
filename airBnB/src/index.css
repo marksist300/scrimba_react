@@ -55,3 +55,51 @@ nav{
   width: 100%;
   padding: 2.5rem 6.5rem 3.2rem 6.5rem;
 }
+
+
+/*Card section */
+
+
+.card-block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.on-card-sales-status{
+  position: relative;
+  bottom: 21rem;
+  right: 16.8rem;
+  background: #FFFFFF;
+  border-radius: .2rem;
+  padding: .5rem;
+}
+
+.card-img{
+  height:23.5rem;
+  border-radius: .9rem;
+}
+
+.exp-rating{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.exp-review-amount, .exp-review-locale{
+  font-weight: 300;
+  color: #918E9B;
+}
+
+.exp-card-tagline{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.exp-card-price-section{
+  font-size: 1.2rem;
+  line-height: 110%;
+}
