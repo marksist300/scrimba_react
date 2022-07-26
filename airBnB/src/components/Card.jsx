@@ -10,7 +10,7 @@ export default function Card (props) {
             <div className="exp-rating">
                 <img src={star} alt="Red star to show the rating of this experience"/>
                 <span className="exp-review-rating" >{rating}</span>
-                <span className="exp-review-amount"> ({reviewCount}) •</span>
+                <span className="exp-review-amount"> ({reviewCount}) • </span>
                 <span className="exp-review-locale">{country}</span>
             </div>
             <h4 className="exp-card-tagline">{title}</h4>
