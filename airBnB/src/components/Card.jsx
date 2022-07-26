@@ -1,19 +1,20 @@
 import React from "react";
 import star from "../assets/star.svg";
-import swimCard from "../assets/swimmer.png"
 
-export default function Card () {
+export default function Card (props) {
+
+    const {img, rating, reviewCount, country, title, price} = props;
     return (
         <div className="card-block">
-            <a href="#"><img className="card-img" src={swimCard} alt="Picture of USA Swimming athlete Katie Zaferes posing after a race in her swim gear" /> <span className="on-card-sales-status">SOLD OUT</span></a>
+            <a href="#"><img className="card-img" src={img} alt="Picture of USA Swimming athlete Katie Zaferes posing after a race in her swim gear" /> <span className="on-card-sales-status">SOLD OUT</span></a>
             <div className="exp-rating">
                 <img src={star} alt="Red star to show the rating of this experience"/>
-                <span className="exp-review-rating" >5.0</span>
-                <span className="exp-review-amount"> (6) •</span>
-                <span className="exp-review-locale">USA</span>
+                <span className="exp-review-rating" >{rating}</span>
+                <span className="exp-review-amount"> ({reviewCount}) •</span>
+                <span className="exp-review-locale">{country}</span>
             </div>
-            <h4 className="exp-card-tagline">Life lessons with Katie Zaferes</h4>
-            <span className="exp-card-price-section"><strong>From <span className="exp-card-price-span">$136</span></strong> / person</span>
+            <h4 className="exp-card-tagline">{title}</h4>
+            <span className="exp-card-price-section"><strong>From <span className="exp-card-price-span">${price}</span></strong> / person</span>
         </div>
     )
 }
